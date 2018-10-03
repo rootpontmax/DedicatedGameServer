@@ -1,5 +1,6 @@
 # xCode
 *.xcworkspacedata
+*.plist
 
 # Directories we don't ever want to commit
 .DS_Store
