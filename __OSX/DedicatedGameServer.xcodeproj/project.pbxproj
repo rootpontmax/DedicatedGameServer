@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2FE1E38D2164DACD00E7AA10 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2FE1E38C2164DACD00E7AA10 /* main.cpp */; };
+		2FE2B43C2224038700C98517 /* Server.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2FE2B4382224038700C98517 /* Server.cpp */; };
+		2FE2B43D2224038700C98517 /* yojimbo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2FE2B43B2224038700C98517 /* yojimbo.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		2FE1E3812164D2E700E7AA10 /* DedicatedGameServer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DedicatedGameServer; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FE1E38C2164DACD00E7AA10 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		2FE2B4382224038700C98517 /* Server.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Server.cpp; sourceTree = "<group>"; };
+		2FE2B4392224038700C98517 /* yojimbo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yojimbo.h; sourceTree = "<group>"; };
+		2FE2B43A2224038700C98517 /* Server.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Server.h; sourceTree = "<group>"; };
+		2FE2B43B2224038700C98517 /* yojimbo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = yojimbo.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,10 @@
 		2FE1E38B2164DACD00E7AA10 /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				2FE2B4382224038700C98517 /* Server.cpp */,
+				2FE2B43A2224038700C98517 /* Server.h */,
+				2FE2B43B2224038700C98517 /* yojimbo.cpp */,
+				2FE2B4392224038700C98517 /* yojimbo.h */,
 				2FE1E38C2164DACD00E7AA10 /* main.cpp */,
 			);
 			name = Code;
@@ -119,7 +129,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FE2B43C2224038700C98517 /* Server.cpp in Sources */,
 				2FE1E38D2164DACD00E7AA10 /* main.cpp in Sources */,
+				2FE2B43D2224038700C98517 /* yojimbo.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
