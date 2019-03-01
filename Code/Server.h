@@ -19,6 +19,8 @@ public:
 private:
     
     void Update( double fixedDeltaTime );
+    void ProcessMessages();
+    void ProcessMessage( const int clientIndex, const yojimbo::Message* pMessage ); 
 
     SConnectionConfig   m_connectionConfig;   
     CAdapter            m_adapter;

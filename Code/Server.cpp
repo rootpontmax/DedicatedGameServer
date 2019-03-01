@@ -61,5 +61,55 @@ void CGameServer::ClientDisconnected( const int clientIndex )
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 void CGameServer::Update( double fixedDeltaTime )
 {
+    // Stop if server is not running
+    if( !m_server.IsRunning() )
+    {
+        m_bRunning = false;
+        return;
+    }
+
+    // Update server and process messages
+    m_server.AdvanceTime(m_time);
+    m_server.ReceivePackets();
+    ProcessMessages();
+
+    // ... process client inputs ...
+    // ... update game ...
+    // ... send game state to clients ...
+
+    m_server.SendPackets();
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////
+void CGameServer::ProcessMessages()
+{
+    for( int i = 0; i < MAX_PLAYERS; ++i )
+    {
+        if( m_server.IsClientConnected( i ) )
+        {
+            for( int j = 0; j < m_connectionConfig.numChannels; ++j )
+            {
+                yojimbo::Message *pMessage = m_server.ReceiveMessage( i, j );
+                while( pMessage )
+                {
+                    ProcessMessage( i, pMessage );
+                    m_server.ReleaseMessage( i, pMessage );
+                    pMessage = m_server.ReceiveMessage( i, j );
+                }
+            }
+        }
+    }
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////
+void CGameServer::ProcessMessage( const int clientIndex, const yojimbo::Message* pMessage )
+{
+    switch( pMessage->GetType() )
+    {
+        case EGameMessage::GAME_MESSAGE_TEST:
+            //ProcessTestMessage(clientIndex, (TestMessage*)message);
+            break;
+            
+        default:
+            break;
+    }
 }
 ////////////////////////////////////////////////////////////////////////////////////////////////////
