@@ -204,6 +204,7 @@
 		2F44649222294412007E0EE2 /* x509write_crt.c in Sources */ = {isa = PBXBuildFile; fileRef = 2F44644322294411007E0EE2 /* x509write_crt.c */; };
 		2F44649322294412007E0EE2 /* x509write_csr.c in Sources */ = {isa = PBXBuildFile; fileRef = 2F44644422294411007E0EE2 /* x509write_csr.c */; };
 		2F44649422294412007E0EE2 /* xtea.c in Sources */ = {isa = PBXBuildFile; fileRef = 2F44644522294412007E0EE2 /* xtea.c */; };
+		2F44649722296E21007E0EE2 /* Adapter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F44649522296E20007E0EE2 /* Adapter.cpp */; };
 		2FE1E38D2164DACD00E7AA10 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2FE1E38C2164DACD00E7AA10 /* main.cpp */; };
 		2FE2B43C2224038700C98517 /* Server.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2FE2B4382224038700C98517 /* Server.cpp */; };
 /* End PBXBuildFile section */
@@ -633,6 +634,8 @@
 		2F44644322294411007E0EE2 /* x509write_crt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = x509write_crt.c; sourceTree = "<group>"; };
 		2F44644422294411007E0EE2 /* x509write_csr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = x509write_csr.c; sourceTree = "<group>"; };
 		2F44644522294412007E0EE2 /* xtea.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = xtea.c; sourceTree = "<group>"; };
+		2F44649522296E20007E0EE2 /* Adapter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Adapter.cpp; sourceTree = "<group>"; };
+		2F44649622296E20007E0EE2 /* Adapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Adapter.h; sourceTree = "<group>"; };
 		2FE1E3812164D2E700E7AA10 /* DedicatedGameServer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DedicatedGameServer; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FE1E38C2164DACD00E7AA10 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		2FE2B4382224038700C98517 /* Server.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Server.cpp; sourceTree = "<group>"; };
@@ -1822,12 +1825,14 @@
 		2FE1E38B2164DACD00E7AA10 /* Code */ = {
 			isa = PBXGroup;
 			children = (
-				2F4463A122294411007E0EE2 /* mbedtls */,
-				2F44639322293F86007E0EE2 /* yojimbo */,
+				2F44649522296E20007E0EE2 /* Adapter.cpp */,
+				2F44649622296E20007E0EE2 /* Adapter.h */,
 				2F4461CF22292577007E0EE2 /* libsodium */,
+				2FE1E38C2164DACD00E7AA10 /* main.cpp */,
+				2F4463A122294411007E0EE2 /* mbedtls */,
 				2FE2B4382224038700C98517 /* Server.cpp */,
 				2FE2B43A2224038700C98517 /* Server.h */,
-				2FE1E38C2164DACD00E7AA10 /* main.cpp */,
+				2F44639322293F86007E0EE2 /* yojimbo */,
 			);
 			name = Code;
 			path = ../Code;
@@ -1958,6 +1963,7 @@
 				2F44638A22292579007E0EE2 /* codecs.c in Sources */,
 				2F44633022292579007E0EE2 /* core_salsa_ref.c in Sources */,
 				2F44645822294412007E0EE2 /* debug.c in Sources */,
+				2F44649722296E21007E0EE2 /* Adapter.cpp in Sources */,
 				2F44646622294412007E0EE2 /* hmac_drbg.c in Sources */,
 				2F44633622292579007E0EE2 /* blake2b-ref.c in Sources */,
 				2F44638522292579007E0EE2 /* stream_xsalsa20.c in Sources */,
