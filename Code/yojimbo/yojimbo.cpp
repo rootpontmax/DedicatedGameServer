@@ -24,13 +24,11 @@
 
 #include "yojimbo.h"
 
-#ifdef _MSC_VER 
+#ifdef _MSC_VER
 #define SODIUM_STATIC
 #endif // #ifdef _MSC_VER
 
-#ifdef USE_SODIUM
 #include <sodium.h>
-#endif
 
 #if YOJIMBO_DEBUG_MEMORY_LEAKS
 #include <map>
