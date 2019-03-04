@@ -8,8 +8,8 @@ CAdapter::CAdapter( CGameServer *pServer ) :
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 yojimbo::MessageFactory *CAdapter::CreateMessageFactory( yojimbo::Allocator& allocator )
 {
-    return nullptr;
-    //return YOJIMBO_NEW( allocator, MessageFactory, allocator ); // CRAP - Replace it with own message factory
+    //return nullptr;
+    return YOJIMBO_NEW( allocator, yojimbo::MessageFactory, allocator, 2 );
 }
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 void CAdapter::OnServerClientConnected( int clientIndex )
