@@ -3,6 +3,9 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 #pragma once
 
+#include <vector>
+#include <string>
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 class CMenu
 {
@@ -11,11 +14,13 @@ public:
     
     void    Input();
     void    Draw();
+    //void    AddLogString( const char
     
     bool    ShouldExit() const { return m_bShouldExit; }
     
 private:
 
+    std::vector< std::string >  m_log;
     bool    m_bShouldRedraw;
     bool    m_bShouldExit;
 };
