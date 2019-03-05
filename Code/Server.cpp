@@ -36,6 +36,15 @@ void CGameServer::Run()
     float fixedDt = 1.0f / 60.0f;
     while( m_bRunning )
     {
+        // Information and control
+        m_menu.Input();
+        m_menu.Draw();
+        if( m_menu.ShouldExit() )
+        {
+            m_server.Stop();
+            break;
+        }
+        
         double currentTime = yojimbo_time();
         if( m_time <= currentTime )
         {

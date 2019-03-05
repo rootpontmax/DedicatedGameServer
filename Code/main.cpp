@@ -9,7 +9,8 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 #include <iostream>
 
-#include "rlutil.h"
+//#include "rlutil.h"
+//#include "Menu.h"
 #include "Server.h"
 
 char chargen() {
@@ -20,6 +21,7 @@ char chargen() {
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 int main( int argc, const char * argv[] )
 {
+    /*
     // CRAP
     rlutil::saveDefaultColor();
 
@@ -198,8 +200,12 @@ int main( int argc, const char * argv[] )
 
     std::cout << "All tests done. Bye!" << std::endl;
     return 0;
+    
+    //*/
     // end of CRAP
-    /*
+    
+    
+    //*
     std::cout << "Init Yojimbo...\n";
     InitializeYojimbo();
     
@@ -215,6 +221,6 @@ int main( int argc, const char * argv[] )
     
     std::cout << "Game server completed\n";
     return 0;
-    */
+    //*/
 }
 ////////////////////////////////////////////////////////////////////////////////////////////////////

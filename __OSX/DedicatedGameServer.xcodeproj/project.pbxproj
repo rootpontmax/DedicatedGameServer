@@ -205,6 +205,7 @@
 		2F44649322294412007E0EE2 /* x509write_csr.c in Sources */ = {isa = PBXBuildFile; fileRef = 2F44644422294411007E0EE2 /* x509write_csr.c */; };
 		2F44649422294412007E0EE2 /* xtea.c in Sources */ = {isa = PBXBuildFile; fileRef = 2F44644522294412007E0EE2 /* xtea.c */; };
 		2F44649722296E21007E0EE2 /* Adapter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F44649522296E20007E0EE2 /* Adapter.cpp */; };
+		2F446775222EAD84007E0EE2 /* Menu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F446773222EAD82007E0EE2 /* Menu.cpp */; };
 		2FE1E38D2164DACD00E7AA10 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2FE1E38C2164DACD00E7AA10 /* main.cpp */; };
 		2FE2B43C2224038700C98517 /* Server.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2FE2B4382224038700C98517 /* Server.cpp */; };
 /* End PBXBuildFile section */
@@ -637,6 +638,8 @@
 		2F44649522296E20007E0EE2 /* Adapter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Adapter.cpp; sourceTree = "<group>"; };
 		2F44649622296E20007E0EE2 /* Adapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Adapter.h; sourceTree = "<group>"; };
 		2F446772222E81F5007E0EE2 /* rlutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rlutil.h; sourceTree = "<group>"; };
+		2F446773222EAD82007E0EE2 /* Menu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Menu.cpp; sourceTree = "<group>"; };
+		2F446774222EAD84007E0EE2 /* Menu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Menu.h; sourceTree = "<group>"; };
 		2FE1E3812164D2E700E7AA10 /* DedicatedGameServer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DedicatedGameServer; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FE1E38C2164DACD00E7AA10 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		2FE2B4382224038700C98517 /* Server.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Server.cpp; sourceTree = "<group>"; };
@@ -1826,6 +1829,8 @@
 		2FE1E38B2164DACD00E7AA10 /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				2F446773222EAD82007E0EE2 /* Menu.cpp */,
+				2F446774222EAD84007E0EE2 /* Menu.h */,
 				2F446772222E81F5007E0EE2 /* rlutil.h */,
 				2F44649522296E20007E0EE2 /* Adapter.cpp */,
 				2F44649622296E20007E0EE2 /* Adapter.h */,
@@ -1908,6 +1913,7 @@
 				2F44635622292579007E0EE2 /* crypto_scalarmult.c in Sources */,
 				2F44633E22292579007E0EE2 /* kdf_blake2b.c in Sources */,
 				2F44648E22294412007E0EE2 /* x509_create.c in Sources */,
+				2F446775222EAD84007E0EE2 /* Menu.cpp in Sources */,
 				2F44633A22292579007E0EE2 /* hash_sha256_cp.c in Sources */,
 				2F44633C22292579007E0EE2 /* hash_sha512_cp.c in Sources */,
 				2F44646C22294412007E0EE2 /* memory_buffer_alloc.c in Sources */,
