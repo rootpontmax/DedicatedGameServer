@@ -640,6 +640,7 @@
 		2F446772222E81F5007E0EE2 /* rlutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rlutil.h; sourceTree = "<group>"; };
 		2F446773222EAD82007E0EE2 /* Menu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Menu.cpp; sourceTree = "<group>"; };
 		2F446774222EAD84007E0EE2 /* Menu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Menu.h; sourceTree = "<group>"; };
+		2F44677D223ABF9E007E0EE2 /* Messages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Messages.h; sourceTree = "<group>"; };
 		2FE1E3812164D2E700E7AA10 /* DedicatedGameServer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DedicatedGameServer; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FE1E38C2164DACD00E7AA10 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		2FE2B4382224038700C98517 /* Server.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Server.cpp; sourceTree = "<group>"; };
@@ -1829,6 +1830,7 @@
 		2FE1E38B2164DACD00E7AA10 /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				2F44677D223ABF9E007E0EE2 /* Messages.h */,
 				2F446773222EAD82007E0EE2 /* Menu.cpp */,
 				2F446774222EAD84007E0EE2 /* Menu.h */,
 				2F446772222E81F5007E0EE2 /* rlutil.h */,

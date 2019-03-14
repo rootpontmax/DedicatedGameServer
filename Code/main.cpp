@@ -9,7 +9,7 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 #include <iostream>
 
-//#include "rlutil.h"
+#include "rlutil.h"
 //#include "Menu.h"
 #include "Server.h"
 
@@ -21,6 +21,7 @@ char chargen() {
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 int main( int argc, const char * argv[] )
 {
+    //rlutil::setConsoleTitle("Dedicated game server. msTech v.1.0.");
     /*
     // CRAP
     rlutil::saveDefaultColor();
@@ -217,9 +218,11 @@ int main( int argc, const char * argv[] )
     CGameServer server( address, config );
     
     std::cout << "Start game sever...\n";
+    std::cout << "Press Q to quit\n";
+    
     server.Run();
     
-    std::cout << "Game server completed\n";
+    std::cout << "\n\nGame server completed\n";
     return 0;
     //*/
 }

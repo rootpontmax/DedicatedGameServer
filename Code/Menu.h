@@ -14,11 +14,21 @@ public:
     
     void    Input();
     void    Draw();
-    //void    AddLogString( const char
+    void    AddLogString( const char *pString );
     
     bool    ShouldExit() const { return m_bShouldExit; }
     
 private:
+
+    enum EMode
+    {
+        MODE_MENU,
+        MODE_LOG,
+        MODE_COUNT
+    };
+
+    void    DrawMenu();
+    void    DrawLog();
 
     std::vector< std::string >  m_log;
     bool    m_bShouldRedraw;

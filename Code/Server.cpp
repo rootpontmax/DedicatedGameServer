@@ -1,5 +1,7 @@
 #include "Server.h"
 
+#include "rlutil.h"
+
 #include <iostream>
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -36,13 +38,15 @@ void CGameServer::Run()
     float fixedDt = 1.0f / 60.0f;
     while( m_bRunning )
     {
-        // Information and control
-        m_menu.Input();
-        m_menu.Draw();
-        if( m_menu.ShouldExit() )
+        // Check exit key function
+        if( kbhit() )
         {
-            m_server.Stop();
-            break;
+            const char keyChar = getch();
+            if( keyChar == 'q' )
+            {
+                m_server.Stop();
+                break;
+            }
         }
         
         double currentTime = yojimbo_time();
