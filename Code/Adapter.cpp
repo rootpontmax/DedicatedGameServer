@@ -1,5 +1,6 @@
 #include "Adapter.h"
 #include "Server.h"
+#include "Messages.h"
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 CAdapter::CAdapter( CGameServer *pServer ) :
@@ -9,7 +10,7 @@ CAdapter::CAdapter( CGameServer *pServer ) :
 yojimbo::MessageFactory *CAdapter::CreateMessageFactory( yojimbo::Allocator& allocator )
 {
     //return nullptr;
-    return YOJIMBO_NEW( allocator, yojimbo::MessageFactory, allocator, 2 );
+    return YOJIMBO_NEW( allocator, ServerMessageFactory, allocator );
 }
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 void CAdapter::OnServerClientConnected( int clientIndex )
