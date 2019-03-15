@@ -9,8 +9,7 @@ CAdapter::CAdapter( CGameServer *pServer ) :
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 yojimbo::MessageFactory *CAdapter::CreateMessageFactory( yojimbo::Allocator& allocator )
 {
-    //return nullptr;
-    return YOJIMBO_NEW( allocator, ServerMessageFactory, allocator );
+    return YOJIMBO_NEW( allocator, CommonMessageFactory, allocator );
 }
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 void CAdapter::OnServerClientConnected( int clientIndex )

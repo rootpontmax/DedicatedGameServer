@@ -117,7 +117,13 @@ void CGameServer::ProcessMessage( const int clientIndex, const yojimbo::Message*
 {
     switch( pMessage->GetType() )
     {
-        case EGameMessage::GAME_MESSAGE_TEST:
+        case EMessageType::MESSAGE_TYPE_INPUT:
+            std::cout << "input message received from client: " << clientIndex << std::endl;
+            //ProcessTestMessage(clientIndex, (TestMessage*)message);
+            break;
+            
+        case EMessageType::MESSAGE_TYPE_STATE_UPDATE:
+            std::cout << "state update message received from client: "  << clientIndex << std::endl;
             //ProcessTestMessage(clientIndex, (TestMessage*)message);
             break;
             

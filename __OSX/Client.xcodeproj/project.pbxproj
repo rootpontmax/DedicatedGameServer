@@ -635,6 +635,8 @@
 		2F4466AA222D6D96007E0EE2 /* tlsf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tlsf.h; sourceTree = "<group>"; };
 		2F4466AB222D6D96007E0EE2 /* yojimbo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = yojimbo.cpp; sourceTree = "<group>"; };
 		2F4466AC222D6D96007E0EE2 /* yojimbo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yojimbo.h; sourceTree = "<group>"; };
+		2F44677E223BA86A007E0EE2 /* Messages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Messages.h; path = ../Code/Messages.h; sourceTree = "<group>"; };
+		2F446780223C036D007E0EE2 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Common.h; path = ../Code/Common.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -651,6 +653,8 @@
 		2F44649B222D3FB2007E0EE2 = {
 			isa = PBXGroup;
 			children = (
+				2F446780223C036D007E0EE2 /* Common.h */,
+				2F44677E223BA86A007E0EE2 /* Messages.h */,
 				2F446555222D6D95007E0EE2 /* libsodium */,
 				2F4464B0222D6D94007E0EE2 /* mbedtls */,
 				2F4466A3222D6D96007E0EE2 /* yojimbo */,

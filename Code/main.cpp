@@ -212,8 +212,7 @@ int main( int argc, const char * argv[] )
     
     std::cout << "Init game sever...\n";
     
-    const int serverPort = 40000;
-    const yojimbo::Address address( "127.0.0.1", serverPort );
+    const yojimbo::Address address( "127.0.0.1", g_serverPort );
     const SConnectionConfig config;
     CGameServer server( address, config );
     
